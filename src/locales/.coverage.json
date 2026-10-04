@@ -1,0 +1,270 @@
+{
+ "v": 1,
+ "at": "2026-10-04T21:16:01.225Z",
+ "incomplete": true,
+ "pendingKeysByLang": {
+  "fr": 0,
+  "ar": 0
+ },
+ "a": [
+  {
+   "path": "src/components/Footer.tsx",
+   "reason": "template-outside-text-position",
+   "snippet": "© . All rights reserved.",
+   "line": 32
+  },
+  {
+   "path": "src/domain/dates.ts",
+   "reason": "module-scope-builder",
+   "snippet": "formatDuration(): m s",
+   "line": 56,
+   "count": 1
+  },
+  {
+   "path": "src/services/notifications.ts",
+   "reason": "module-scope-builder",
+   "snippet": "notificationsSupported(): Notification",
+   "line": 18,
+   "count": 1
+  },
+  {
+   "path": "src/storage/exporters.ts",
+   "reason": "module-scope-builder",
+   "snippet": "toCsv(): Date · Dhikr",
+   "line": 6,
+   "count": 6
+  },
+  {
+   "path": "src/storage/exporters.ts",
+   "reason": "module-scope-builder",
+   "snippet": "toJson(): Misbahly",
+   "line": 16,
+   "count": 1
+  },
+  {
+   "path": "src/storage/storage.ts",
+   "reason": "module-scope-builder",
+   "snippet": "loadData(): :corrupt",
+   "line": 53,
+   "count": 1
+  }
+ ],
+ "b": [],
+ "c": [
+  {
+   "path": "src/components/ErrorBoundary.tsx",
+   "reason": "class-component",
+   "snippet": "Something went wrong",
+   "line": 32
+  },
+  {
+   "path": "src/components/ErrorBoundary.tsx",
+   "reason": "class-component",
+   "snippet": "An unexpected error occurred. Try refreshing the page.",
+   "line": 34
+  },
+  {
+   "path": "src/components/ErrorBoundary.tsx",
+   "reason": "class-component",
+   "snippet": "Reload",
+   "line": 45
+  },
+  {
+   "path": "src/components/Footer.tsx",
+   "reason": "unclassified-token",
+   "snippet": "Brand",
+   "line": 24
+  },
+  {
+   "path": "src/components/Header.tsx",
+   "reason": "unclassified-token",
+   "snippet": "Brand",
+   "line": 20
+  },
+  {
+   "path": "src/components/MotionReveal.tsx",
+   "reason": "unclassified-token",
+   "snippet": "-80px",
+   "line": 19
+  },
+  {
+   "path": "src/lib/chantan-ai.ts",
+   "reason": "excluded-dir-text",
+   "snippet": "AI request failed ()",
+   "line": 94
+  },
+  {
+   "path": "src/store/AppStore.tsx",
+   "reason": "error-text",
+   "snippet": "Store missing",
+   "line": 17
+  },
+  {
+   "path": "src/data/content.ts",
+   "reason": "unrendered-data-prop",
+   "snippet": "morning: \"Morning Dhikr\", \"Morning Dhikr\"",
+   "count": 2
+  },
+  {
+   "path": "src/data/content.ts",
+   "reason": "unrendered-data-prop",
+   "snippet": "evening: \"Evening Dhikr\", \"Evening Dhikr\"",
+   "count": 2
+  },
+  {
+   "path": "src/data/content.ts",
+   "reason": "unrendered-data-prop",
+   "snippet": "sleep: \"Before Sleep\", \"Before Sleep\"",
+   "count": 2
+  },
+  {
+   "path": "src/data/content.ts",
+   "reason": "unrendered-data-prop",
+   "snippet": "afterPrayer: \"After Prayer\"",
+   "count": 1
+  },
+  {
+   "path": "src/data/content.ts",
+   "reason": "unrendered-data-prop",
+   "snippet": "friday: \"Friday Dhikr\", \"Friday Dhikr\"",
+   "count": 2
+  },
+  {
+   "path": "src/data/dhikrLibrary.ts",
+   "reason": "unrendered-data-prop",
+   "snippet": "arabic: \"سُبْحَانَ اللَّهِ\", \"الْحَمْدُ لِلَّهِ\"",
+   "count": 18
+  },
+  {
+   "path": "src/data/dhikrLibrary.ts",
+   "reason": "unrendered-data-prop",
+   "snippet": "transliteration: \"Allahu Akbar\", \"La ilaha illallah\"",
+   "count": 15
+  },
+  {
+   "path": "src/data/dhikrLibrary.ts",
+   "reason": "unrendered-data-prop",
+   "snippet": "translation: \"Glory be to Allah\", \"All praise is due to Allah\"",
+   "count": 18
+  },
+  {
+   "path": "src/data/dhikrLibrary.ts",
+   "reason": "unrendered-data-prop",
+   "snippet": "source: \"Sahih Muslim\", \"Sahih Muslim\"",
+   "count": 16
+  },
+  {
+   "path": "src/data/dhikrLibraryMore.ts",
+   "reason": "unrendered-data-prop",
+   "snippet": "arabic: \"اللَّهُمَّ بِكَ أَصْبَحْنَا وَبِكَ أَمْس\", \"اللَّهُمَّ بِكَ أَمْسَيْنَا وَبِكَ أَصْب\"",
+   "count": 14
+  },
+  {
+   "path": "src/data/dhikrLibraryMore.ts",
+   "reason": "unrendered-data-prop",
+   "snippet": "transliteration: \"Allahumma bika asbahna wa bika amsayna w\", \"Allahumma bika amsayna wa bika asbahna w\"",
+   "count": 14
+  },
+  {
+   "path": "src/data/dhikrLibraryMore.ts",
+   "reason": "unrendered-data-prop",
+   "snippet": "translation: \"O Allah, by You we enter the morning and\", \"O Allah, by You we enter the evening and\"",
+   "count": 14
+  },
+  {
+   "path": "src/data/dhikrLibraryMore.ts",
+   "reason": "unrendered-data-prop",
+   "snippet": "source: \"Jami at-Tirmidhi\", \"Jami at-Tirmidhi\"",
+   "count": 14
+  },
+  {
+   "path": "src/data/notificationCopy.ts",
+   "reason": "unrendered-data-prop",
+   "snippet": "reminder_morning: \"Start your morning with a quiet moment o\", \"A new day. Begin it with remembrance.\"",
+   "count": 2
+  },
+  {
+   "path": "src/data/notificationCopy.ts",
+   "reason": "unrendered-data-prop",
+   "snippet": "reminder_evening: \"Take a quiet moment for your evening dhi\", \"The evening is a gentle time to remember\"",
+   "count": 2
+  },
+  {
+   "path": "src/data/notificationCopy.ts",
+   "reason": "unrendered-data-prop",
+   "snippet": "reminder_sleep: \"Close your day with remembrance before y\", \"A few quiet words of dhikr before bed.\"",
+   "count": 2
+  },
+  {
+   "path": "src/data/notificationCopy.ts",
+   "reason": "unrendered-data-prop",
+   "snippet": "missed_usual: \"Your usual dhikr hasn't happened yet. Ta\", \"You still have a small moment for dhikr \"",
+   "count": 3
+  },
+  {
+   "path": "src/data/notificationCopy.ts",
+   "reason": "unrendered-data-prop",
+   "snippet": "missed_yesterday: \"Yesterday you completed your dhikr. Your\", \"Yesterday you kept your routine. Don't l\"",
+   "count": 2
+  },
+  {
+   "path": "src/data/notificationCopy.ts",
+   "reason": "unrendered-data-prop",
+   "snippet": "reminder_prayer: \"{{name}} time has passed. Take a quiet m\", \"After {{name}}, a few peaceful moments o\"",
+   "count": 2
+  },
+  {
+   "path": "src/data/notificationCopy.ts",
+   "reason": "unrendered-data-prop",
+   "snippet": "reminder_custom: \"Time for your {{name}} 🤍\"",
+   "count": 1
+  },
+  {
+   "path": "src/data/notificationCopy.ts",
+   "reason": "unrendered-data-prop",
+   "snippet": "streak: \"{{n}} days of consistency. A short dhikr\"",
+   "count": 1
+  },
+  {
+   "path": "src/data/notificationCopy.ts",
+   "reason": "unrendered-data-prop",
+   "snippet": "goal: \"You're at {{done}} of {{goal}} today. A \"",
+   "count": 1
+  },
+  {
+   "path": "src/data/notificationCopy.ts",
+   "reason": "unrendered-data-prop",
+   "snippet": "weekly: \"Your weekly reflection is ready. See how\"",
+   "count": 1
+  },
+  {
+   "path": "src/data/notificationCopy.ts",
+   "reason": "unrendered-data-prop",
+   "snippet": "rescue: \"Let's start again. Just one minute of dh\", \"No pressure. One quiet minute is a beaut\"",
+   "count": 2
+  },
+  {
+   "path": "src/data/notificationCopy.ts",
+   "reason": "unrendered-data-prop",
+   "snippet": "suhoor: \"Suhoor time is near. May your night be b\"",
+   "count": 1
+  },
+  {
+   "path": "src/data/notificationCopy.ts",
+   "reason": "unrendered-data-prop",
+   "snippet": "iftar: \"Iftar is near. A moment of dua and dhikr\"",
+   "count": 1
+  },
+  {
+   "path": "index.html",
+   "reason": "tab-title",
+   "snippet": "<title>Misbahly: Tasbih Counter Zikr</title>"
+  },
+  {
+   "path": "supabase/functions/_shared/cors.ts",
+   "reason": "server-messages",
+   "snippet": "2 text(s) across 1 edge function file(s)",
+   "count": 2
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Misbahly: Tasbih Counter Zikr",
+  "short_name": "Misbahly",
+  "description": "Remember. Reflect. Repeat.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8f5ec",
+  "theme_color": "#0f3d2e",
+  "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }],
+  "shortcuts": [
+    { "name": "Start Tasbih", "url": "/tasbih" },
+    { "name": "1 Minute Dhikr", "url": "/one-minute" },
+    { "name": "Morning Dhikr", "url": "/?a=morning" },
+    { "name": "Evening Dhikr", "url": "/?a=evening" }
+  ]
+}

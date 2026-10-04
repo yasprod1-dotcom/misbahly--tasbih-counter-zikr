@@ -1,0 +1,133 @@
+/* PLATFORM DESIGN DNA (server-assigned identity): palette "Ocean Deep" · fonts Amiri / Cairo. These :root token values ARE this build's identity — keep them when restyling (only an explicit user color request may change them). The header's transparent-state text color is pre-set in --header-fg-transparent. */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Misbahly — emerald / cream / restrained gold. Calm, premium, night-friendly. */
+@layer base {
+  :root {
+    --background: 42 40% 96%;
+    --foreground: 160 28% 11%;
+    --header-fg-transparent: var(--foreground);
+    --primary-on-media: 42 45% 97%;
+    --primary-on-media-foreground: 160 28% 11%;
+    --card: 42 45% 98%;
+    --card-foreground: 160 28% 11%;
+    --popover: 42 45% 98%;
+    --popover-foreground: 160 28% 11%;
+    --primary: 160 58% 22%;
+    --primary-foreground: 42 45% 97%;
+    --secondary: 42 28% 92%;
+    --secondary-foreground: 160 28% 14%;
+    --muted: 42 26% 92%;
+    --muted-foreground: 160 10% 36%;
+    --accent: 150 30% 90%;
+    --accent-foreground: 160 58% 20%;
+    --gold: 41 62% 44%;
+    --destructive: 0 62% 46%;
+    --destructive-foreground: 0 0% 100%;
+    --success: 152 56% 34%;
+    --success-foreground: 0 0% 100%;
+    --border: 42 22% 85%;
+    --input: 42 22% 85%;
+    --ring: 160 58% 22%;
+    --radius: 0.9rem;
+    --font-sans: 'Cairo', 'IBM Plex Sans Arabic', ui-sans-serif, system-ui, sans-serif;
+    --font-display: 'Amiri', 'IBM Plex Sans Arabic', 'Cairo', serif;
+    --shadow-sm: 0 1px 2px 0 hsl(160 30% 12% / 0.04), 0 1px 3px 0 hsl(160 30% 12% / 0.06);
+    --shadow-md: 0 2px 4px -1px hsl(160 30% 12% / 0.06), 0 8px 16px -4px hsl(160 30% 12% / 0.08);
+    --shadow-lg: 0 4px 8px -2px hsl(160 30% 12% / 0.07), 0 20px 40px -8px hsl(160 30% 12% / 0.12);
+    --shadow-xl: 0 8px 16px -4px hsl(160 30% 12% / 0.08), 0 32px 64px -12px hsl(160 30% 12% / 0.16);
+    --shadow-glow: 0 0 0 1px hsl(var(--primary) / 0.10), 0 8px 32px -8px hsl(var(--primary) / 0.35);
+    --sidebar-background: 42 40% 97%;
+    --sidebar-foreground: 160 20% 22%;
+    --sidebar-primary: 160 58% 22%;
+    --sidebar-primary-foreground: 42 45% 97%;
+    --sidebar-accent: 42 26% 92%;
+    --sidebar-accent-foreground: 160 28% 14%;
+    --sidebar-border: 42 22% 85%;
+    --sidebar-ring: 160 58% 22%;
+  }
+
+  .dark {
+    --background: 162 24% 6%;
+    --foreground: 42 28% 92%;
+    --card: 162 22% 9%;
+    --card-foreground: 42 28% 92%;
+    --popover: 162 22% 8%;
+    --popover-foreground: 42 28% 92%;
+    --primary: 152 46% 50%;
+    --primary-foreground: 162 30% 7%;
+    --secondary: 162 16% 14%;
+    --secondary-foreground: 42 28% 92%;
+    --muted: 162 16% 13%;
+    --muted-foreground: 42 10% 64%;
+    --accent: 162 30% 16%;
+    --accent-foreground: 150 40% 80%;
+    --gold: 42 58% 62%;
+    --destructive: 0 62% 50%;
+    --success: 152 50% 46%;
+    --border: 162 14% 17%;
+    --input: 162 14% 17%;
+    --ring: 152 46% 50%;
+    --shadow-sm: 0 1px 2px 0 hsl(0 0% 0% / 0.30), 0 1px 3px 0 hsl(0 0% 0% / 0.40);
+    --shadow-md: 0 2px 4px -1px hsl(0 0% 0% / 0.35), 0 8px 16px -4px hsl(0 0% 0% / 0.45);
+    --shadow-lg: 0 4px 8px -2px hsl(0 0% 0% / 0.40), 0 20px 40px -8px hsl(0 0% 0% / 0.55);
+    --shadow-xl: 0 8px 16px -4px hsl(0 0% 0% / 0.45), 0 32px 64px -12px hsl(0 0% 0% / 0.65);
+    --shadow-glow: 0 0 0 1px hsl(var(--primary) / 0.20), 0 8px 40px -8px hsl(var(--primary) / 0.45);
+    --sidebar-background: 162 22% 8%;
+    --sidebar-foreground: 42 20% 88%;
+    --sidebar-primary: 152 46% 50%;
+    --sidebar-primary-foreground: 162 30% 7%;
+    --sidebar-accent: 162 16% 14%;
+    --sidebar-accent-foreground: 42 28% 92%;
+    --sidebar-border: 162 14% 17%;
+    --sidebar-ring: 152 46% 50%;
+  }
+
+  html.hc { --foreground: 0 0% 0%; --border: 160 20% 30%; --muted-foreground: 160 20% 18%; }
+  html.hc.dark { --foreground: 0 0% 100%; --border: 42 20% 60%; --muted-foreground: 42 20% 84%; }
+  html.large-text { font-size: 118%; }
+  html.reduce-motion *, html.reduce-motion *::before, html.reduce-motion *::after {
+    animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important;
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+  html { -webkit-tap-highlight-color: transparent; }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overscroll-behavior-y: none;
+  }
+  h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; letter-spacing: -0.01em; line-height: 1.15; text-wrap: balance; }
+  html[dir='rtl'] *, html[lang='ar'] * { letter-spacing: 0 !important; }
+  p { text-wrap: pretty; }
+  ::selection { background-color: hsl(var(--primary) / 0.18); }
+}
+
+@layer components {
+  .font-arabic { font-family: 'Amiri', 'IBM Plex Sans Arabic', serif; line-height: 1.9; }
+  .hairline { height: 1px; background: hsl(var(--border)); }
+  .pb-safe { padding-bottom: max(env(safe-area-inset-bottom), 0.5rem); }
+  .pt-safe { padding-top: max(env(safe-area-inset-top), 0.5rem); }
+  .tap-ring { animation: tap-ring 0.55s cubic-bezier(0.22, 1, 0.36, 1) both; }
+  .bead-pop { animation: bead-pop 0.18s ease-out both; }
+  .glow-breathe { animation: glow-breathe 5s ease-in-out infinite; }
+}
+
+@keyframes tap-ring { from { opacity: 0.55; transform: scale(0.92); } to { opacity: 0; transform: scale(1.28); } }
+@keyframes bead-pop { 0% { transform: scale(1); } 40% { transform: scale(1.045); } 100% { transform: scale(1); } }
+@keyframes glow-breathe { 0%, 100% { opacity: 0.5; } 50% { opacity: 0.9; } }
+
+.on-media {
+  --background: 0 0% 7%; --foreground: 0 0% 100%; --card: 0 0% 10%; --card-foreground: 0 0% 100%;
+  --popover: 0 0% 10%; --popover-foreground: 0 0% 100%;
+  --primary: var(--primary-on-media, 0 0% 100%); --primary-foreground: var(--primary-on-media-foreground, 0 0% 8%);
+  --secondary: 0 0% 16%; --secondary-foreground: 0 0% 100%; --muted: 0 0% 16%; --muted-foreground: 0 0% 82%;
+  --accent: 0 0% 20%; --accent-foreground: 0 0% 100%; --border: 0 0% 82%; --input: 0 0% 82%; --ring: 0 0% 100%;
+  color: hsl(var(--foreground));
+}
